@@ -7,4 +7,5 @@ RUN apt-get update && apt-get install -y \
     git
 RUN git clone https://github.com/codemunkee/emelbee &&\
     cd /emelbee && python setup.py install
+EXPOSE 5000
 CMD ["/emelbee/bin/emelbee_api"]
